@@ -782,6 +782,7 @@ a:hover, a:active {
 .next-events-section-header {
     margin-top: 36px;
     text-align: center;
+    margin: auto;
 }
 
 .next-events-section-header .entry-title,

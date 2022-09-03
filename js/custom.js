@@ -8,70 +8,11 @@
         $('.site-navigation').toggleClass('show');
     });
 
-    // Hero Slider
-    var mySwiper = new Swiper('.hero-slider', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + '</span>';
-            }
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        }
-    });
-
-    var current_slide = mySwiper.activeIndex;
-    var countdown_date = $('.swiper-slide').eq(current_slide).data("date");
-
-    $('.countdown').countdown(countdown_date, function(event) {
-        $('.dday').html(event.strftime('%-D'));
-        $('.dhour').html(event.strftime('%-H'));
-        $('.dmin').html(event.strftime('%-M'));
-        $('.dsec').html(event.strftime('%-S'));
-    });
-
-    mySwiper.on('slideChange', function (slider) {
-        var current_slide = mySwiper.activeIndex;
-        var countdown_date = $('.swiper-slide').eq(current_slide).data("date");
-
-        $('.countdown').countdown(countdown_date, function(event) {
-            $('.dday').html(event.strftime('%-D'));
-            $('.dhour').html(event.strftime('%-H'));
-            $('.dmin').html(event.strftime('%-M'));
-            $('.dsec').html(event.strftime('%-S'));
-        });
-    });
-
-    // Events Slider
-    var swiper = new Swiper('.homepage-regional-events-slider', {
-        slidesPerView: 6,
-        spaceBetween: 30,
-        loop: true,
-        breakpoints: {
-            // when window width is <= 320px
-            576: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 3
-            },
-            992: {
-                slidesPerView: 4
-            },
-            1200: {
-                slidesPerView: 5
-            }
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        }
+    $(".countdown").countdown("2022/09/05", function (event) {
+      $(".dday").html(event.strftime("%D") + "<span>Ngày</span>");
+      $(".dhour").html(event.strftime("%H") + "<span>Giờ</span>");
+      $(".dmin").html(event.strftime("%M") + "<span>Phút</span>");
+      $(".dsec").html(event.strftime("%S") + "<span>Giây</span>");
     });
 
     // Load more events

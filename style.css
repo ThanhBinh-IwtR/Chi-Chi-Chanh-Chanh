@@ -124,6 +124,7 @@ a:hover, a:active {
 --------------------------------*/
 .site-header {
     position: relative;
+    height: 100vh;
 }
 
 .site-header .site-title img {
@@ -281,35 +282,6 @@ a:hover, a:active {
     border-color: #2f2f2f;
 }
 
-@media screen and (min-width: 992px) {
-    .site-navigation {
-        position: relative;
-        top: auto;
-        right: auto;
-        height: auto;
-        background: transparent;
-    }
-
-    .site-navigation ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: center;
-        position: relative;
-        top: auto;
-        left: auto;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        overflow: auto;
-        background: transparent;
-    }
-
-    .site-navigation ul li a {
-        color: #fff;
-    }
-}
-
 /*
 # Buy Tickets
 --------------------------------*/
@@ -327,15 +299,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero-slider {
-}
-
-.hero-content {
-    padding-top: 300px;
-    
-    padding-left: 190px;
-}
-
 .hero-content .container,
 .hero-content .row,
 .hero-content .col {
@@ -441,6 +404,10 @@ a:hover, a:active {
 /*
 # Countdown
 --------------------------------*/
+.countdown {
+    font-size: 5rem;
+    color: white;
+}
 .countdown-holder {
     margin: auto;
     color: #fff;
@@ -474,11 +441,6 @@ a:hover, a:active {
         /*height: 100vh;*/
     }
 
-    .hero-content {
-        padding-top: 300px;
-        padding-left: 320px;
-    }
-
     .hero-slider .entry-title {
         font-size: 72px;
     }
@@ -494,11 +456,6 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 1200px){
-    .hero-content {
-        padding-top: 300px;
-        padding-left: 450px;
-    }
-
     .swiper-button-next {
         right: 64px;
     }
@@ -2215,15 +2172,34 @@ ul.tabs-nav .tab-nav.active {
 }
 .swiper-slide{
     height: 750px;
+    width: 100vw;
 }
 .trongdong{
     top: 0;
     position: absolute;
     z-index: 5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
 }
+.wrap-trongdongreal {
+    position: relative;
+    background: url(images/BGtrongdong.jpg) 0 0 no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
 .trongdongreal {
-    animation: rotation 50s infinite linear;
-    opacity: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+        width: 100vw;
+        animation: rotation 50s infinite linear;
+            opacity: 80%;
+    
 }
 
 @keyframes rotation {
@@ -2236,25 +2212,21 @@ ul.tabs-nav .tab-nav.active {
 }
 .elementsentrai{
     position: absolute;
-    top:0;
-    height: 80%;
-    margin-top: 200px;
-    margin-left: 10px;
+    bottom: 0;
+    left: 10px;
+    height: calc(80% - 200px);
 }
 .elementsenphai{
     position: absolute;
-    top:0;
-    height: 80%;
-    margin-top: 150px;
-    margin-left: 1210px;
-    padding-top: 300px;
+    bottom: 0;
+    right: 0;
+    height: calc(80% - 300px);
 }
 .elementconco{
     position: absolute;
-    top: 0;
-    margin-left: 1150px;
-    height: 60%;
-    margin-top: 210px;
+    bottom: 70px;
+    right: 130px;
+    height: calc(80% - 300px);
 }
 
 .section_title h4 {
@@ -2444,4 +2416,41 @@ ul.tabs-nav .tab-nav.active {
     color: #959494;
     margin-top: 40px;
     
+}
+
+
+.wrap {
+    display: flex;
+    position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+}
+
+.background-trongdong {
+    background: no-repeat;
+    height: 100vh;
+}
+
+#clock {
+  max-width: 80rem;
+  text-align: center;
+  font-size: 8rem;
+  line-height: 1.2;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  height: fit-content;
+  
+}
+#clock span {
+  font-family: CCCCfont;
+  display: block;
+  font-size: 1.8rem;
+}
+
+.wraptrongdong {
+    display: flex;
+    align-items: center;
+    width: 70vw;
 }

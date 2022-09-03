@@ -433,6 +433,12 @@ a:hover, a:active {
     .countdown-holder label {
         font-size: 18px;
     }
+    #clock{
+        font-size: 4rem !important;
+    }
+    #clock span{
+        font-size: 1.8rem !important;
+    }
 }
 
 
@@ -2439,7 +2445,7 @@ ul.tabs-nav .tab-nav.active {
 #clock {
   max-width: 80rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 1.2;
   font-family: CCCCfont;
   font-weight: 300;
@@ -2449,7 +2455,7 @@ ul.tabs-nav .tab-nav.active {
 #clock span {
   font-family: CCCCfont;
   display: block;
-  font-size: 1.8rem;
+  font-size: 0.8rem;
 }
 
 .wraptrongdong {

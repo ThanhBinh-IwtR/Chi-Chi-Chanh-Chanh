@@ -2214,13 +2214,14 @@ ul.tabs-nav .tab-nav.active {
     position: absolute;
     bottom: 0;
     left: 10px;
-    height: calc(80% - 200px);
+    height: 75%;
 }
 .elementsenphai{
     position: absolute;
     bottom: 0;
     right: 0;
-    height: calc(80% - 300px);
+    height: 80%;
+    
 }
 .elementconco{
     position: absolute;
@@ -2436,9 +2437,9 @@ ul.tabs-nav .tab-nav.active {
 #clock {
   max-width: 80rem;
   text-align: center;
-  font-size: 8rem;
+  font-size: 4rem;
   line-height: 1.2;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: CCCCfont;
   font-weight: 300;
   height: fit-content;
   
@@ -2452,5 +2453,10 @@ ul.tabs-nav .tab-nav.active {
 .wraptrongdong {
     display: flex;
     align-items: center;
-    width: 70vw;
+    width: 50vw;
+}
+.elementname{
+    width: 50%;
+    position: absolute;
+    left: 25%;
 }

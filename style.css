@@ -8,13 +8,14 @@
     font-style: normal;
 }
 @font-face {
+    font-family: bevn;
+    src: url(fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf) format("ttf");
+}
+@font-face {
     font-family: CCCCfont;
     src: url(fonts/BHN-TAN-KINDRED-Display.woff) format("woff");
 }
-@font-face {
-    font-family: CCCCsubfont;
-    src: url(fonts/iCielBCOldStyle-Regular.ttf) format("ttf");
-}
+
 html{
     scroll-behavior: smooth;
 }
@@ -525,10 +526,10 @@ a:hover, a:active {
 }
 
 .homepage-info-section .entry-title {
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 50px;
     line-height: 1;
     color: #ffffff;
+    font-family: CCCCfont;
 }
 
 .homepage-info-section .entry-content {
@@ -539,10 +540,11 @@ a:hover, a:active {
     font-size: 18px;
     line-height: 1.7;
     color: #ffffff;
+    
 }
 
 .homepage-info-section .entry-footer a {
-    margin-top: 32px;
+    
     margin-right: 18px;
 }
 
@@ -789,7 +791,6 @@ a:hover, a:active {
 .events-partners .entry-title {
     padding: 24px 0;
     font-size: 40px;
-    font-weight: bold;
     line-height: 2;
     color: #ffffff;
     background: url("") no-repeat center;
@@ -803,7 +804,6 @@ a:hover, a:active {
     font-size: 18px;
     line-height: 1.7;
     color: #ffffff;
-    font-family: CCCCsubfont;
 }
 
 @media screen and (min-width: 1200px){
@@ -847,21 +847,28 @@ a:hover, a:active {
 
 .homepage-next-events .next-event-wrap .entry-title {
     margin-top: 32px;
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 16px;
     color: #ffffff;
+    
+    line-height: 1.8;
 }
 
 .homepage-next-events .next-event-wrap .posted-date {
     margin-top: 12px;
     font-size: 18px;
-    font-weight: bold;
     text-transform: uppercase;
+    color:#9a28d7 ;
+}
+.homepage-next-events .next-event-wrap .posted-date span{
     color: #777777;
+    font-weight: bold;
+    
 }
 
-.homepage-next-events .next-event-wrap .posted-date span {
-    color: #9a28d7;
+.homepage-next-events .next-event-wrap .entry-title span {
+    color: #ffffff;
+    font-family: CCCCfont;
+    font-size: 19px;
 }
 
 .homepage-next-events .next-event-wrap .entry-content p {
@@ -869,6 +876,7 @@ a:hover, a:active {
     font-size: 15px;
     line-height: 1.7;
     color: #ffffff;
+    text-align: justify;
 }
 
 .homepage-next-events .next-event-wrap .entry-footer {
@@ -879,9 +887,13 @@ a:hover, a:active {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    border-bottom: 2px solid #bec0cc;
+    border-bottom: 2px solid rgb(190, 192, 204);
     text-decoration: none;
-    color: #bec0cc;
+    padding: 18px 46px;
+    border: 0px;
+    background: linear-gradient(270deg, rgb(171, 0, 229) 0%, rgb(88, 20, 121) 100%);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
 }
 
 .homepage-next-events .next-event-wrap .entry-footer a:hover {
@@ -2178,7 +2190,6 @@ ul.tabs-nav .tab-nav.active {
     width: 42px;
     height: 42px;
     margin-top: -21px;
-    border: 2px solid #fff;
     border-radius: 50%;
     background: #9a28d7;
     transition: all .35s;
@@ -2391,6 +2402,11 @@ ul.tabs-nav .tab-nav.active {
 .d4{
     height: 100%;
     width: 100%;
+}
+.d5{
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
 }
 .b9{
     height: 100%;

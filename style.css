@@ -35,12 +35,12 @@ a {
     color: royalblue;
 }
 
-a:visited {
+a:visited  {
     color: purple;
 }
 
 a:hover, a:focus, a:active {
-    color: midnightblue;
+    color: rgb(255, 255, 255);
 }
 
 a:focus {

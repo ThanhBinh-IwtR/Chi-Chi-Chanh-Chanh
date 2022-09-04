@@ -2390,4 +2390,7 @@ ul.tabs-nav .tab-nav.active {
     bottom: 40px;
     box-shadow: rgba(154, 40, 215, 0.85);
   }
+  .vetinh {
+    display: block;
+  }
 }

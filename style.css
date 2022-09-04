@@ -540,6 +540,9 @@ a:active {
   z-index: 99;
 }
 
+.entry-header {
+  min-height: 144px;
+}
 .homepage-featured-events .event-content-wrap .entry-header .entry-title {
   display: inline-block;
   padding: 12px 18px;

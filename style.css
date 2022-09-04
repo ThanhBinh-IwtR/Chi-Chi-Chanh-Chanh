@@ -106,7 +106,7 @@ a:active {
   border-radius: 100rem;
   color: #fff;
   box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-  border: solid 3px transparent;
+  border: solid 4px transparent;
   background-image: linear-gradient(
       270deg,
       rgba(171, 0, 229, 1) 0%,
@@ -570,175 +570,6 @@ a:active {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 575px) {
-  .featured-events-wrap .event-content-wrap.half {
-    width: calc(50% - 15px);
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .featured-events-wrap .event-content-wrap {
-    width: calc(50% - 15px);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .featured-events-wrap .event-content-wrap {
-    width: calc(50% - 15px);
-  }
-
-  .featured-events-wrap .event-content-wrap.half {
-    width: calc(33.333333% - 15px);
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .homepage-featured-events {
-    min-height: 1260px;
-  }
-
-  .featured-events-wrap .event-content-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-bottom: 0;
-  }
-
-  .homepage-featured-events .positioning-event-1 {
-    width: 290px;
-  }
-
-  .homepage-featured-events .positioning-event-2 {
-    width: 210px;
-    top: 192px;
-    left: 320px;
-  }
-
-  .homepage-featured-events .positioning-event-3 {
-    width: 210px;
-    top: 75px;
-    left: 560px;
-  }
-
-  .homepage-featured-events .positioning-event-4 {
-    width: 130px;
-    top: 235px;
-    left: 800px;
-  }
-
-  .homepage-featured-events .positioning-event-5 {
-    width: 130px;
-    top: 350px;
-    left: 0;
-  }
-
-  .homepage-featured-events .positioning-event-6 {
-    width: 130px;
-    top: 344px;
-    left: 560px;
-  }
-
-  .homepage-featured-events .positioning-event-7 {
-    width: 210px;
-    top: 457px;
-    left: 160px;
-  }
-
-  .homepage-featured-events .positioning-event-8 {
-    width: 290px;
-    top: 457px;
-    left: 400px;
-  }
-
-  .homepage-featured-events .positioning-event-9 {
-    width: 210px;
-    top: 395px;
-    left: 720px;
-  }
-
-  .homepage-featured-events .positioning-event-10 {
-    width: 130px;
-    top: 653px;
-    left: 720px;
-  }
-
-  .homepage-featured-events .positioning-event-11 {
-    width: 130px;
-    top: 807px;
-    left: 400px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .homepage-featured-events {
-    min-height: 1480px;
-  }
-
-  .homepage-featured-events .positioning-event-1 {
-    width: 350px;
-  }
-
-  .homepage-featured-events .positioning-event-2 {
-    width: 255px;
-    top: 230px;
-    left: 380px;
-  }
-
-  .homepage-featured-events .positioning-event-3 {
-    width: 255px;
-    top: 90px;
-    left: 665px;
-  }
-
-  .homepage-featured-events .positioning-event-4 {
-    width: 160px;
-    top: 280px;
-    left: 950px;
-  }
-
-  .homepage-featured-events .positioning-event-5 {
-    width: 160px;
-    top: 417px;
-    left: 0;
-  }
-
-  .homepage-featured-events .positioning-event-6 {
-    width: 160px;
-    top: 410px;
-    left: 665px;
-  }
-
-  .homepage-featured-events .positioning-event-7 {
-    width: 255px;
-    top: 546px;
-    left: 190px;
-  }
-
-  .homepage-featured-events .positioning-event-8 {
-    width: 350px;
-    top: 546px;
-    left: 475px;
-  }
-
-  .homepage-featured-events .positioning-event-9 {
-    width: 255px;
-    top: 470px;
-    left: 855px;
-  }
-
-  .homepage-featured-events .positioning-event-10 {
-    width: 160px;
-    top: 776px;
-    left: 855px;
-  }
-
-  .homepage-featured-events .positioning-event-11 {
-    width: 160px;
-    top: 963px;
-    left: 475px;
-  }
-}
-
 /*--------------------------------------------------------------
 # Homepage - Next Events
 --------------------------------------------------------------*/
@@ -848,7 +679,7 @@ a:active {
   border-radius: 100rem;
   color: #fff;
   box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-  border: solid 3px transparent;
+  border: solid 4px transparent;
   background-image: linear-gradient(
       270deg,
       rgba(171, 0, 229, 1) 0%,
@@ -2496,10 +2327,64 @@ ul.tabs-nav .tab-nav.active {
 .wraptrongdong {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 50vw;
 }
 .elementname {
   width: 50%;
   position: absolute;
   left: 25%;
+}
+
+@media screen and (max-width: 574px) {
+  .trongdongreal {
+    width: unset;
+    height: 100vh;
+  }
+  #clock {
+    font-size: 2.5rem;
+  }
+  #clock span {
+    font-size: 1.2rem;
+  }
+  .entry-title {
+    line-height: 1.8 !important;
+  }
+  .logoCCCC {
+    width: 80%;
+    margin: auto;
+  }
+  .logoCCCC_parent {
+    padding: unset;
+    display: flex;
+    padding: 0 !important;
+    justify-content: center;
+  }
+  .entry-content {
+    text-align: justify;
+    text-align-last: center;
+  }
+  .entry-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .entry-footer a {
+    margin: unset !important;
+    box-shadow: none !important;
+  }
+  .entry-title {
+    font-size: 1.5rem !important;
+    padding: 0 12px !important;
+    text-align: center;
+  }
+  .homepage-regional-events {
+    margin: 0 12px !important;
+    padding: 40px 0 !important;
+    min-height: unset !important;
+  }
+  .back-to-top {
+    right: 40px;
+    bottom: 40px;
+    box-shadow: rgba(154, 40, 215, 0.85);
+  }
 }

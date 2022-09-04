@@ -2399,4 +2399,7 @@ ul.tabs-nav .tab-nav.active {
   .entry-title {
     font-size: 16px !important;
   }
+  .homepage-info-section .entry-content p {
+    font-size: 15px;
+  }
 }

@@ -1989,7 +1989,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .footer-logo img {
-  max-width: 10%;
+  max-width: 30%;
 }
 
 .footer-navigation ul,
@@ -2147,7 +2147,6 @@ ul.tabs-nav .tab-nav.active {
 }
 .events-partners-logos .event-doitac-logo {
   width: 20%;
-  min-width: 220px;
   margin-top: 50px;
   text-align: center;
 }
@@ -2392,5 +2391,8 @@ ul.tabs-nav .tab-nav.active {
   }
   .vetinh {
     display: block;
+  }
+  .doitac div {
+    min-width: 100px;
   }
 }

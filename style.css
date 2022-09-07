@@ -2064,7 +2064,7 @@ ul.tabs-nav .tab-nav.active {
 .back-to-top {
   position: fixed;
   z-index: 9999;
-  right: 64px;
+  
   bottom: 84px;
   width: 42px;
   height: 42px;
@@ -2352,7 +2352,7 @@ ul.tabs-nav .tab-nav.active {
   max-width: 80rem;
   text-align: center;
   font-size: 4rem;
-  line-height: 1.2;
+  line-height: 1.5;
   font-family: CCCCfont;
   font-weight: 300;
   height: fit-content;
@@ -2422,7 +2422,7 @@ ul.tabs-nav .tab-nav.active {
     min-height: unset !important;
   }
   .back-to-top {
-    right: 40px;
+    
     bottom: 40px;
     box-shadow: rgba(154, 40, 215, 0.85);
   }
@@ -2438,4 +2438,8 @@ ul.tabs-nav .tab-nav.active {
   .homepage-info-section .entry-content p {
     font-size: 15px;
   }
+}
+.status{
+  font-family: CCCCfont;
+  color: white;
 }
